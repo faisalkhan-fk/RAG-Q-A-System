@@ -98,7 +98,7 @@ if prompt := st.chat_input("Ask a question about the document..."):
         with st.chat_message("assistant"):
             with st.spinner("Thinking..."):
                 try:
-                    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.3)
+                    llm = ChatGoogleGenerativeAI(model="gemini-3.6-flash", temperature=0.3)
                     
                     # Create the RAG chain
                     system_prompt = (
